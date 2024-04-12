@@ -1,8 +1,9 @@
-FROM node:14.15.0
+FROM node:14.15.0 as angular
 WORKDIR /app
-COPY . /app
-RUN npm cache clean --force
+
+COPY package*.json ./
+COPY . .
 RUN npm install
 RUN npm run build
-EXPOSE 4200
+
 CMD ["npx", "http-server", "dist/crudtuto-Front", "-a", "0.0.0.0", "-p", "4200"]
