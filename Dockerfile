@@ -5,4 +5,4 @@ RUN npm cache clean --force
 RUN npm install
 RUN npm run build
 EXPOSE 4200
-CMD ["npm", "start"]
+CMD ["npx", "http-server", "dist/crudtuto-front", "-a", "0.0.0.0", "-p", "4200"]
