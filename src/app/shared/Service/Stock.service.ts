@@ -7,6 +7,7 @@ import { HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class StockService {
+  //ip addr changed
   readonly API_URL = 'http://192.168.1.14:8089/SpringMVC/stock';
 
   constructor(private httpClient: HttpClient) { }
