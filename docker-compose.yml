@@ -2,7 +2,7 @@
  services:
    app:
      build: .
-     image: arslen/achatfront:1.0.0
+     image: thamer123/achatfront:1.0.0
      restart: on-failure
      container_name: frontcont
      ports:
