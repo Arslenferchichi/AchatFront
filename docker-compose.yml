@@ -1,9 +1,9 @@
-version: '3.8'
-services:
-  app:
-    build: .
-    image: nizar607/nizar-ouertani-front
-    restart: on-failure
-    container_name: frontcont
-    ports:
-      - 4200:4200
+# version: '3.8'
+# services:
+#   app:
+#     build: .
+#     image: nizar607/nizar-ouertani-front
+#     restart: on-failure
+#     container_name: frontcont
+#     ports:
+#       - 4200:4200
