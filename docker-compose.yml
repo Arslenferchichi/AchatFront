@@ -2,7 +2,7 @@ version: '3.8'
 services:
   app:
     build: .
-    image: arslen/achatfront:1.0.0
+    image: ghassen2904/achatfront:1.0.0
     restart: on-failure
     container_name: frontcont
     ports:
